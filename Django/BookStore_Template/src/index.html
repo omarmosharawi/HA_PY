@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Book Store</title>
+  </head>
+
+  <body class="d-flex flex-column h-100 bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+      <div class="container">
+        <a class="navbar-brand" href="/">Book Store</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse mt-2 mt-lg-0"
+          id="navbarSupportedContent"
+        >
+          <form class="d-flex mx-auto">
+            <div class="input-group">
+              <input
+                type="text"
+                class="form-control"
+                style="width: 400px"
+                placeholder="Search"
+              />
+              <select class="form-control" style="width: 160px">
+                <option>Category</option>
+                <option>Category</option>
+                <option>Category</option>
+                <option>Category</option>
+                <option>Category</option>
+              </select>
+              <button class="btn btn-primary" type="button">
+                <i class="lni lni-search-alt text-white"></i>
+              </button>
+            </div>
+          </form>
+          <ul class="navbar-nav my-2 my-lg-0">
+            <li class="nav-item">
+              <a href="cart.html" class="btn btn-outline-dark" type="button">
+                Shopping Cart (0)
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+      <div class="container">
+        <div
+          class="collapse navbar-collapse mt-2 mt-lg-0"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav my-2 my-lg-0">
+            <li class="nav-item">
+              <a class="nav-link mx-1" href="category.html" role="button">
+                Programming
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-1" href="category.html" role="button">
+                Design
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-1" href="category.html" role="button">
+                AI
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-1" href="category.html" role="button">
+                Freelancing
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-1" href="category.html" role="button">
+                Manufacturing
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <!-- Slider main container -->
+      <div class="main-slider my-auto">
+        <!-- Additional required wrapper -->
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="container pt-5">
+              <div class="row">
+                <div class="col-md-4 text-center d-none d-lg-block">
+                  <img
+                    src="https://via.placeholder.com/300"
+                    alt="..."
+                    class="img-fluid rounded"
+                  />
+                </div>
+                <div class="col-md-8">
+                  <h1 class="text-secondary">
+                    Title test
+                  </h1>
+                  <blockquote class="blockquote mt-4">
+                    <p class="text-muted">
+                      description test
+                    </p>
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="container pt-5">
+              <div class="row">
+                <div class="col-md-4 text-center d-none d-lg-block">
+                  <img
+                    src="https://via.placeholder.com/300"
+                    alt="..."
+                    class="img-fluid rounded"
+                  />
+                </div>
+                <div class="col-md-8">
+                  <h1 class="text-secondary">
+                    There are many variations of Lorem Ipsum passages available
+                  </h1>
+                  <blockquote class="blockquote mt-4">
+                    <p class="text-muted">
+                      There are many variations of passages of Lorem Ipsum available,
+                      but the majority have been modified in some form, by injected humour,
+                      or randomized words into the text. If you want to use a passage of Lorem Ipsum,
+                      you need to first check that there are no embarrassing or inappropriate words or phrases hidden in it.
+                    </p>
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="container pt-5">
+              <div class="row">
+                <div class="col-md-4 text-center d-none d-lg-block">
+                  <img
+                    src="https://via.placeholder.com/300"
+                    alt="..."
+                    class="img-fluid rounded"
+                  />
+                </div>
+                <div class="col-md-8">
+                  <h1 class="text-secondary">
+                    There are many variations of Lorem Ipsum passages available
+                  </h1>
+                  <blockquote class="blockquote mt-4">
+                    <p class="text-muted">
+                      There are many variations of passages of Lorem Ipsum available,
+                      but the majority have been modified in some form, by injected humour,
+                      or randomized words into the text. If you want to use a passage of Lorem Ipsum,
+                      you need to first check that there are no embarrassing or inappropriate words or phrases hidden in it.
+                    </p>
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- If we need scrollbar -->
+        <!-- <div class="swiper-scrollbar"></div> -->
+      </div>
+      <div class="container my-5">
+        <section>
+          <div class="col-md-12 mb-5">
+            <p class="h1 text-center text-secondary">Featured books</p>
+          </div>
+          <div class="row">
+            <div class="col-md-3">
+              <div class="product card mb-4">
+                <img
+                  src="https://via.placeholder.com/300"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div
+                  class="card-img-overlay d-flex flex-column align-items-center justify-content-center"
+                >
+                  <a class="btn btn-outline-light" href="product.html"
+                    >Add to cart</a
+                  >
+                  <a class="btn btn-outline-light mt-2" href="product.html"
+                    >Review</a
+                  >
+                </div>
+                <div class="card-body">
+                  <h6 class="text-muted">Author name</h6>
+                  <h6 class="card-title">Vue.js framework basics</h6>
+                  <strong class="fw-bold text-success">0$</strong>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="product card mb-4">
+                <img
+                  src="https://via.placeholder.com/300"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div
+                  class="card-img-overlay d-flex flex-column align-items-center justify-content-center"
+                >
+                  <a class="btn btn-outline-light" href="product.html"
+                    >Add to cart</a
+                  >
+                  <a class="btn btn-outline-light mt-2" href="product.html"
+                    >Review</a
+                  >
+                </div>
+                <div class="card-body">
+                  <h6 class="text-muted">Author name</h6>
+                  <h6 class="card-title">Operating systems</h6>
+                  <strong class="fw-bold text-success">0$</strong>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="product card mb-4">
+                <img
+                  src="https://via.placeholder.com/300"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div
+                  class="card-img-overlay d-flex flex-column align-items-center justify-content-center"
+                >
+                  <a class="btn btn-outline-light" href="product.html"
+                    >Add to cart</a
+                  >
+                  <a class="btn btn-outline-light mt-2" href="product.html"
+                    >Review</a
+                  >
+                </div>
+                <div class="card-body">
+                  <h6 class="text-muted">Author name</h6>
+                  <h6 class="card-title">Operating systems for programmers</h6>
+                  <strong class="fw-bold text-success">0$</strong>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="product card mb-4">
+                <img
+                  src="https://via.placeholder.com/300"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div
+                  class="card-img-overlay d-flex flex-column align-items-center justify-content-center"
+                >
+                  <a class="btn btn-outline-light" href="product.html"
+                    >Add to cart</a
+                  >
+                  <a class="btn btn-outline-light mt-2" href="product.html"
+                    >Review</a
+                  >
+                </div>
+                <div class="card-body">
+                  <h6 class="text-muted">Author name</h6>
+                  <h6 class="card-title">Graphic design basics</h6>
+                  <strong class="fw-bold text-success">0$</strong>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="product card mb-4">
+                <img
+                  src="https://via.placeholder.com/300"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div
+                  class="card-img-overlay d-flex flex-column align-items-center justify-content-center"
+                >
+                  <a class="btn btn-outline-light" href="product.html"
+                    >Add to cart</a
+                  >
+                  <a class="btn btn-outline-light mt-2" href="product.html"
+                    >Review</a
+                  >
+                </div>
+                <div class="card-body">
+                  <h6 class="text-muted">Author name</h6>
+                  <h6 class="card-title">React.js framework basics</h6>
+                  <strong class="fw-bold text-success">0$</strong>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="product card mb-4">
+                <img
+                  src="https://via.placeholder.com/300"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div
+                  class="card-img-overlay d-flex flex-column align-items-center justify-content-center"
+                >
+                  <a class="btn btn-outline-light" href="product.html"
+                    >Add to cart</a
+                  >
+                  <a class="btn btn-outline-light mt-2" href="product.html"
+                    >Review</a
+                  >
+                </div>
+                <div class="card-body">
+                  <h6 class="text-muted">Author name</h6>
+                  <h6 class="card-title">Express.js framework basics</h6>
+                  <strong class="fw-bold text-success">0$</strong>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="product card mb-4">
+                <img
+                  src="https://via.placeholder.com/300"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div
+                  class="card-img-overlay d-flex flex-column align-items-center justify-content-center"
+                >
+                  <a class="btn btn-outline-light" href="product.html"
+                    >Add to cart</a
+                  >
+                  <a class="btn btn-outline-light mt-2" href="product.html"
+                    >Review</a
+                  >
+                </div>
+                <div class="card-body">
+                  <h6 class="text-muted">Author name</h6>
+                  <h6 class="card-title">Angular framework basics</h6>
+                  <strong class="fw-bold text-success">0$</strong>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="product card mb-4">
+                <img
+                  src="https://via.placeholder.com/300"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div
+                  class="card-img-overlay d-flex flex-column align-items-center justify-content-center"
+                >
+                  <a class="btn btn-outline-light" href="product.html"
+                    >Add to cart</a
+                  >
+                  <a class="btn btn-outline-light mt-2" href="product.html"
+                    >Review</a
+                  >
+                </div>
+                <div class="card-body">
+                  <h6 class="text-muted">Author name</h6>
+                  <h6 class="card-title">Laravel framework basics</h6>
+                  <strong class="fw-bold text-success">0$</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="footer mt-auto py-4 bg-secondary">
+      <div class="container text-center">
+        <span class="text text-light">© 2024 All rights reserved. | <a href="https://www.linkedin.com/in/omarmosharawi/" rel="noopener" style="text-decoration: none; color: inherit;" target="_blank">Omar Mohamed Sharawi</a></span>
+      </div>
+    </footer>
+  </body>
+</html>

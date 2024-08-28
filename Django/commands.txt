@@ -1,0 +1,22 @@
+make directory:
+mkdir {directory_name}
+
+django:
+pipenv shell
+pipenv install django
+django-admin startproject {project_name}
+python .\manage.py runserver
+python .\manage.py startapp {app_name}
+to add user in django:
+python manage.py createsuperuser --username={username} --email={email}
+to add language in django:
+python .\manage.py makemessages -l {language_code}
+python .\manage.py compilemessages
+
+githup:
+git init
+git add .
+git commit -m "{message}"
+git branch -M {branch_name}
+git remote add origin {repo_url}
+git push origin {branch_name}

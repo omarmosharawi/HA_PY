@@ -1,0 +1,48 @@
+{% load i18n %}
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-secondary bg-gradient p-3">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="{% url 'Project_List' %}">{% trans 'Projects Management' %}</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav me-auto mb-2 mb-md-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="{% url 'Project_List' %}">{% trans 'Home' %}</a>
+        </li>
+      </ul>
+      {% if user.is_authenticated %}
+        <ul class="navbar-nav mb-2 mb-lg-0 me-3">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              {{user.username}}
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="{% url 'Profile' %}">{% trans 'Profile' %}</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li>
+              <form method="post" action="{% url 'Logout' %}">
+                {% csrf_token %}
+                <button type="submit" class="dropdown-item">{% trans 'Logout' %}</button>
+              </form>
+              </li>
+<!--              <li><a class="dropdown-item" href="{% url 'Logout' %}">{% trans 'Logout' %}</a></li>-->
+            </ul>
+          </li>
+        </ul>
+        <form method="get" action="{% url 'Project_List' %}" class="d-flex">
+          <div class="input-group">
+            <input type="text" name="q" class="form-control" placeholder="{% trans 'Search' %}" value="{{request.GET.q}}">
+            <button class="btn btn-outline-light" type="submit">
+              <i class="bi bi-search"></i>
+            </button>
+          </div>
+        </form>
+      {% else %}
+        <a class="btn btn-outline-light mx-1" href="{% url 'Login' %}">{% trans 'Login' %}</a>
+        <a class="btn btn-outline-light" href="{% url 'Register' %}">{% trans 'Register' %}</a>
+      {% endif %}
+    </div>
+  </div>
+</nav>
